@@ -1,0 +1,30 @@
+mat-toolbar {
+  justify-content: space-between;
+  background-color: #7DA2A9;
+
+}
+a {
+  padding-right: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+h4,mat-icon{
+    color:white;
+}
+ mat-divider{
+     width: 5px;
+     background-color: white;
+ }
+
+mat-sidenav-container{
+    height: 90%;
+}
+
+mat-sidenav, mat-sidenav-content{
+    padding: 16px;
+}
+mat-sidenav{
+  background-color: #7DA2A9;
+    width: 200px ;
+}

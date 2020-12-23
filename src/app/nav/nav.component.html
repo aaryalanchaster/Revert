@@ -1,0 +1,51 @@
+<mat-toolbar class="navbar">
+    <div>
+        <button mat-button (click)="opened=!opened">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div>
+        <a href="#" class="tool">Home</a>
+        <a href="#" class="tool"> About</a>
+        <a href="#" class="tool"> Services</a>
+    </div>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" [opened]="opened" fixedToGap="56" role="navigation">
+        <mat-nav-list>
+            <a>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>folder</mat-icon>
+                    <h4 mat-line>Dashboard</h4>
+                    <mat-divider></mat-divider>
+                </mat-list-item>
+            </a>
+            <a>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>folder</mat-icon>
+                    <h4 mat-line>hi</h4>
+                    <mat-divider></mat-divider>
+                </mat-list-item>
+            </a>
+            <a>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>folder</mat-icon>
+            
+                    <h4 mat-line>hi</h4>
+                    <mat-divider></mat-divider>
+                </mat-list-item>
+            </a>
+            <a>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>folder</mat-icon>
+                    <h4 mat-line>hi</h4>
+                    <mat-divider></mat-divider>
+                </mat-list-item>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content role="main">
+        Main
+    </mat-sidenav-content>
+</mat-sidenav-container>
