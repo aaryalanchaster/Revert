@@ -6,12 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-  opened = false;
+  opened = true;
+  // arrow = keyboard
   constructor() { }
-
-  
 
   ngOnInit(): void {
   }
-
 }

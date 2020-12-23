@@ -5,10 +5,32 @@
         </button>
     </div>
     <div>
-        <a href="#" class="tool">Home</a>
-        <a href="#" class="tool"> About</a>
-        <a href="#" class="tool"> Services</a>
+        <mat-form-field appearance="standard">
+            <input matInput placeholder="Search">
+            <mat-icon class="big" matSuffix>search</mat-icon>
+        </mat-form-field>
+
+        <!-- <a href="#" class="tool">
+                <button mat-button>
+                <mat-icon mat-list-icon>search</mat-icon>
+                </button>
+            </a>
+      -->
+        <a href="#" class="tool">
+            <button mat-button>
+                <mat-icon mat-list-icon>notifications</mat-icon>
+            </button>
+        </a>
+        <a href="#" class="tool">
+            <button mat-button>
+                <mat-icon mat-list-icon>logout</mat-icon>
+            </button>
+        </a>
+
+
+
     </div>
+
 </mat-toolbar>
 
 <mat-sidenav-container>
@@ -16,23 +38,22 @@
         <mat-nav-list>
             <a>
                 <mat-list-item>
-                    <mat-icon mat-list-icon>folder</mat-icon>
-                    <h4 mat-line>Dashboard</h4>
+                    <mat-icon mat-list-icon>home</mat-icon>
+                    <h4 mat-line>Home</h4>
                     <mat-divider></mat-divider>
                 </mat-list-item>
             </a>
             <a>
                 <mat-list-item>
-                    <mat-icon mat-list-icon>folder</mat-icon>
-                    <h4 mat-line>hi</h4>
+                    <mat-icon mat-list-icon>perm_identity</mat-icon>
+                    <h4 mat-line>Profile</h4>
                     <mat-divider></mat-divider>
                 </mat-list-item>
             </a>
             <a>
                 <mat-list-item>
-                    <mat-icon mat-list-icon>folder</mat-icon>
-            
-                    <h4 mat-line>hi</h4>
+                    <mat-icon mat-list-icon>groups</mat-icon>
+                    <h4 mat-line>About</h4>
                     <mat-divider></mat-divider>
                 </mat-list-item>
             </a>
@@ -46,6 +67,7 @@
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content role="main">
-        Main
+        <ng-content>
+        </ng-content>
     </mat-sidenav-content>
 </mat-sidenav-container>
