@@ -7,9 +7,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
-import { ADashboardComponent } from './a-dashboard/a-dashboard.component';
-import { MlistComponent } from './a-dashboard/mlist/mlist.component';
-import { TxTableComponent } from './a-dashboard/tx-table/tx-table.component'
+import { ADashboardComponent } from './nav/a-dashboard/a-dashboard.component';
+import { MlistComponent } from './nav/a-dashboard/mlist/mlist.component';
+import { TxTableComponent } from './nav/a-dashboard/tx-table/tx-table.component'
+import { MListNewProduct } from './nav/a-dashboard/mlist/mlist.component'
+import { MListNewRequest } from './nav/a-dashboard/mlist/mlist.component'
+import { MListNewTx } from './nav/a-dashboard/mlist/mlist.component'
+import { MListNewMember } from './nav/a-dashboard/mlist/mlist.component';
+import { LoginpageComponent } from './loginpage/loginpage.component'
+
+
 
 @NgModule({
   declarations: [
@@ -17,7 +24,12 @@ import { TxTableComponent } from './a-dashboard/tx-table/tx-table.component'
     NavComponent,
     ADashboardComponent,
     MlistComponent,
-    TxTableComponent
+    TxTableComponent,
+    MListNewProduct,
+    MListNewRequest,
+    MListNewTx,
+    MListNewMember,
+    LoginpageComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +37,7 @@ import { TxTableComponent } from './a-dashboard/tx-table/tx-table.component'
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule
-  
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 mat-toolbar {
   justify-content: space-between;
-  background-color: #2f6690;
+  background-color: #006a71;
   height: 70px;
 }
 
@@ -10,14 +10,16 @@ button {
   margin: none;
 }
 
-
-.mat-badge-content{
+.mat-badge-content {
   height: 2px;
   width: 2px;
+  color: black;
+  background-color: black;
+  background: black;
 }
 
 .title {
-  color: #d9dcd6;
+  color: #ecf4f3;
   font-size: 25px;
   position: relative;
   top: 6px;
@@ -25,11 +27,11 @@ button {
 }
 
 mat-form-field {
-  color: #d9dcd6;
+  color: #ecf4f3;
   padding-right: 15px;
 }
 ::placeholder {
-  color: #d9dcd6;
+  color: #ecf4f3;
   font-size: medium;
 }
 
@@ -42,32 +44,32 @@ mat-form-field {
   top: 5px;
 }
 
-
 a {
   /* padding-right: 1rem; */
   text-decoration: none;
-  color: #d9dcd6;
+  color: #ecf4f3;
 }
 
 h4,
 mat-icon {
-  color: #d9dcd6;
+  color: #ecf4f3;
   /* font-size: 50px; */
 }
 mat-divider {
   width: 5px;
-  background-color: #d9dcd6;
+  background-color: #ecf4f3;
 }
 
 mat-sidenav-container {
-  height: 90%;
+  height: 87.75%;
 }
 
 mat-sidenav-content {
   padding: 16px;
 }
 mat-sidenav {
-  background-color: #2f6690;
+  background-color: #006a71;
   width: 200px;
   padding: 0 16px;
 }
+

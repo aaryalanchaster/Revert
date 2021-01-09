@@ -1,0 +1,6 @@
+<app-loginpage *ngIf='!isloggedIn' (loginEvent)="loginConfirmation($event)">
+</app-loginpage>
+
+
+
+<app-nav *ngIf='isloggedIn'></app-nav>
