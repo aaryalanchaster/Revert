@@ -1,0 +1,40 @@
+<mat-toolbar class="navbar">
+    <div>
+        <a [routerLink]="['/home']">
+            <span class="title">Retrovert</span>
+        </a>
+    </div>
+    <div>
+        <!-- <mat-form-field appearance="standard">
+            <input matInput placeholder="Search" />
+            <mat-icon class="big" matSuffix>search</mat-icon>
+        </mat-form-field> -->
+        <a [routerLink]="['/profile']">
+            <button mat-button matTooltip="Profile">
+                <mat-icon mat-list-icon>person</mat-icon>
+            </button>
+        </a>
+        <a href="#" class="tool">
+            <button mat-button [matMenuTriggerFor]="menu" matTooltip="Notifications">
+                <mat-icon mat-list-icon class="hide-number">
+                    notifications
+                </mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>This is notification 1</button>
+                <button mat-menu-item>This is notification 2</button>
+                <button mat-menu-item>This is notification 3</button>
+            </mat-menu>
+        </a>
+        <a>
+            <button mat-button matTooltip="Contact Us">
+                <mat-icon mat-list-icon>groups</mat-icon>
+            </button>
+        </a>
+        <a href="#" class="tool">
+            <button mat-button matTooltip="Logout">
+                <mat-icon mat-list-icon>logout</mat-icon>
+            </button>
+        </a>
+    </div>
+</mat-toolbar>

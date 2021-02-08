@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'retrovert-ver1'`, () => {
+  it(`should have as title 'revert'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('retrovert-ver1');
+    expect(app.title).toEqual('revert');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('retrovert-ver1 app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('revert app is running!');
   });
 });

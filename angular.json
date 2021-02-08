@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "retrovert": {
+    "revert": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/retrovert",
+            "outputPath": "dist/revert",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "retrovert:build"
+            "browserTarget": "revert:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "retrovert:build:production"
+              "browserTarget": "revert:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "retrovert:build"
+            "browserTarget": "revert:build"
           }
         },
         "test": {
@@ -115,16 +115,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "retrovert:serve"
+            "devServerTarget": "revert:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "retrovert:serve:production"
+              "devServerTarget": "revert:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "retrovert"
+  "defaultProject": "revert"
 }

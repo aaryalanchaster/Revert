@@ -1,0 +1,13 @@
+<div *ngIf='!isloggedIn' class="main-div">
+    <mat-card>
+        <mat-tab-group mat-align-tabs="center">
+            <mat-tab label='Login'>
+                <app-login-card (loginEvent)="loginConfirmation($event)">
+                </app-login-card>
+            </mat-tab>
+            <mat-tab label='Register'>
+                <app-register-card (loginEvent)="loginConfirmation($event)"></app-register-card>
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+</div>

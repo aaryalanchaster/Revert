@@ -1,0 +1,16 @@
+<div mat-dialog-content>
+    <!-- <p>Firstname</p> -->
+    <mat-form-field>
+        <mat-label>Firstname</mat-label>
+        <input matInput />
+    </mat-form-field>
+    <!-- <p>Lastname</p> -->
+    <mat-form-field>
+        <mat-label>Lastname</mat-label>
+        <input matInput />
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-button cdkFocusInitial>Add</button>
+</div>

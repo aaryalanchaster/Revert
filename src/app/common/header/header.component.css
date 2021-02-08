@@ -1,0 +1,36 @@
+mat-toolbar {
+  justify-content: space-between;
+  background-color: #006a71;
+  height: 70px;
+}
+
+button {
+  min-width: fit-content;
+  padding: none;
+  margin: none;
+}
+
+.title {
+  color: #ecf4f3;
+  font-size: 25px;
+  position: relative;
+  top: 6px;
+  font-weight: 525;
+}
+
+::placeholder {
+  color: #ecf4f3;
+  font-size: medium;
+}
+
+a {
+  /* padding-right: 1rem; */
+  text-decoration: none;
+  color: #ecf4f3;
+}
+
+h4,
+mat-icon {
+  color: #ecf4f3;
+  /* font-size: 50px; */
+}

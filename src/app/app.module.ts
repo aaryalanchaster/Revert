@@ -4,39 +4,48 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavComponent } from './nav/nav.component';
-import { MaterialModule } from './material/material.module';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
+import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './common/footer/footer.component';
+import { HeaderComponent } from './common/header/header.component';
 import { FormsModule } from '@angular/forms';
-import { ADashboardComponent } from './nav/a-dashboard/a-dashboard.component';
-import { MlistComponent } from './nav/a-dashboard/mlist/mlist.component';
-import { TxTableComponent } from './nav/a-dashboard/tx-table/tx-table.component'
-import { MListNewProduct } from './nav/a-dashboard/mlist/mlist.component'
-import { MListNewRequest } from './nav/a-dashboard/mlist/mlist.component'
-import { MListNewTx } from './nav/a-dashboard/mlist/mlist.component'
-import { MListNewMember } from './nav/a-dashboard/mlist/mlist.component';
-import { LoginpageComponent } from './loginpage/loginpage.component'
-
+import { MaterialModule } from './material/material.module';
+import { TxTableComponent } from './home/tx-table/tx-table.component';
+import { MemberComponent } from './dialog/member/member.component';
+import { TxComponent } from './dialog/tx/tx.component';
+import { RequestComponent } from './dialog/request/request.component';
+import { ProductComponent } from './dialog/product/product.component';
+import { LoginCardComponent } from './login/login-card/login-card.component';
+import { RegisterCardComponent } from './login/register-card/register-card.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
-    ADashboardComponent,
-    MlistComponent,
+    LoginComponent,
+    ProfileComponent,
+    HomeComponent,
+    FooterComponent,
+    HeaderComponent,
     TxTableComponent,
-    MListNewProduct,
-    MListNewRequest,
-    MListNewTx,
-    MListNewMember,
-    LoginpageComponent
+    MemberComponent,
+    TxComponent,
+    RequestComponent,
+    ProductComponent,
+    LoginCardComponent,
+    RegisterCardComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,
-    FormsModule
+    FormsModule,
+    MaterialModule
+
+
 
   ],
   providers: [],
