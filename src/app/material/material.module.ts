@@ -17,7 +17,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatTableModule } from '@angular/material/table';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import{MatTabsModule} from '@angular/material/tabs'
+import { MatTabsModule } from '@angular/material/tabs'
+import { MatRadioModule } from "@angular/material/radio";
 const material = [
   MatToolbarModule,
   MatSidenavModule,
@@ -36,7 +37,8 @@ const material = [
   MatDialogModule,
   MatTableModule,
   MatSnackBarModule,
-  MatTabsModule
+  MatTabsModule,
+  MatRadioModule
 ];
 @NgModule({
   // declarations: [],

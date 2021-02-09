@@ -21,6 +21,7 @@ export class LoginCardComponent implements OnInit {
     if (this.email == this.emailAdd && this.passwd == this.password) {
       console.log(this.email, this.passwd);
       this.isloggedIn = true;
+      // this.router.navigate(['/dashboard/home'], { relativeTo: this.route });
       // this.router.navigate[("/nav")]
     } else {
       this.openSnackBar()
