@@ -23,12 +23,13 @@ export class LoginCardComponent implements OnInit {
       this.isloggedIn = true;
       // this.router.navigate(['/dashboard/home'], { relativeTo: this.route });
       // this.router.navigate[("/nav")]
+      this.loginEvent.emit(this.isloggedIn);
     } else {
       this.openSnackBar()
       this.isloggedIn = false;
     }
     console.log('login', this.isloggedIn);
-    this.loginEvent.emit(this.isloggedIn);
+    
   }
   openSnackBar() {
     this._snackbar.open('Invalid Login', 'Retry', {
