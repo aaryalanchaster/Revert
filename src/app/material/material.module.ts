@@ -19,6 +19,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTabsModule } from '@angular/material/tabs'
 import { MatRadioModule } from "@angular/material/radio";
+import { MatSelectModule } from '@angular/material/select';
 const material = [
   MatToolbarModule,
   MatSidenavModule,
@@ -38,7 +39,8 @@ const material = [
   MatTableModule,
   MatSnackBarModule,
   MatTabsModule,
-  MatRadioModule
+  MatRadioModule,
+  MatSelectModule
 ];
 @NgModule({
   // declarations: [],
@@ -48,4 +50,4 @@ const material = [
   ],
   exports: [material],
 })
-export class MaterialModule {}
+export class MaterialModule { }

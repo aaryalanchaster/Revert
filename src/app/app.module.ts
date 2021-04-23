@@ -19,6 +19,10 @@ import { ProductComponent } from './dialog/product/product.component';
 import { LoginCardComponent } from './login/login-card/login-card.component';
 import { RegisterCardComponent } from './login/register-card/register-card.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeProducerComponent } from './home-producer/home-producer.component';
+import { HomeTraderComponent } from './home-trader/home-trader.component';
+import { HomeConsumerComponent } from './home-consumer/home-consumer.component';
+import { HomeCompanyComponent } from './home-company/home-company.component';
 
 
 @NgModule({
@@ -37,6 +41,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LoginCardComponent,
     RegisterCardComponent,
     DashboardComponent,
+    HomeProducerComponent,
+    HomeTraderComponent,
+    HomeConsumerComponent,
+    HomeCompanyComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,3 +60,4 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

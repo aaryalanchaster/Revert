@@ -1,0 +1,39 @@
+<div class="table-div">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="new_owner">
+      <th mat-header-cell *matHeaderCellDef> New Owner </th>
+      <td mat-cell *matCellDef="let element"> {{element.new_owner}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="old_owner">
+      <th mat-header-cell *matHeaderCellDef> Old Owner </th>
+      <td mat-cell *matCellDef="let element"> {{element.old_owner}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="commodity_id">
+      <th mat-header-cell *matHeaderCellDef> Commodity ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.commodity_id}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="product_id">
+      <th mat-header-cell *matHeaderCellDef> Product ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.product_id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="timestamp">
+      <th mat-header-cell *matHeaderCellDef> Timestamp </th>
+      <td mat-cell *matCellDef="let element"> {{element.timestamp}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
