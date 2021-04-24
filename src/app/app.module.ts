@@ -23,7 +23,8 @@ import { HomeProducerComponent } from './home-producer/home-producer.component';
 import { HomeTraderComponent } from './home-trader/home-trader.component';
 import { HomeConsumerComponent } from './home-consumer/home-consumer.component';
 import { HomeCompanyComponent } from './home-company/home-company.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import {ApiService} from './services/api.service'
 
 @NgModule({
   declarations: [
@@ -51,12 +52,13 @@ import { HomeCompanyComponent } from './home-company/home-company.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
 
 
 
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

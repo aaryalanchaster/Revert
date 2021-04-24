@@ -1,11 +1,11 @@
 <div>
-    <mat-form-field appearance="standard">
+    <mat-form-field appearance="standard" >
         <mat-label>Organisation</mat-label>
-        <mat-select>
-            <mat-option value="one">Trader</mat-option>
-            <mat-option value="two">Farmer</mat-option>
-            <mat-option value="two">Company</mat-option>
-            <mat-option value="two">Customer</mat-option>
+        <mat-select [(ngModel)]="selectedValue" >
+            <mat-option value="company">Company</mat-option>
+            <mat-option value="farmer">Farmer</mat-option>
+            <mat-option value="trader">Trader</mat-option>
+            <mat-option value="customer">Customer</mat-option>
         </mat-select>
     </mat-form-field>
 </div>

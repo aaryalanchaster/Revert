@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { MatSelectChange } from '@angular/material/select';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
@@ -8,22 +9,23 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class LoginCardComponent implements OnInit {
 
-  @Output() loginEvent = new EventEmitter<boolean>();
+  @Output() loginEvent = new EventEmitter<any>();
   emailAdd = 'temp@gmail.com';
   password = 'temp@123';
   email = '';
   passwd = '';
+  selectedValue='';
   isloggedIn = false;
   ngOnInit(): void { }
   constructor(private _snackbar: MatSnackBar) { }
   onValidate() {
     console.log(this.email, this.passwd);
     if (this.email == this.emailAdd && this.passwd == this.password) {
-      console.log(this.email, this.passwd);
+      console.log(this.email, this.passwd,this.selectedValue);
       this.isloggedIn = true;
       // this.router.navigate(['/dashboard/home'], { relativeTo: this.route });
       // this.router.navigate[("/nav")]
-      this.loginEvent.emit(this.isloggedIn);
+      this.loginEvent.emit([this.isloggedIn,this.selectedValue]);
     } else {
       this.openSnackBar()
       this.isloggedIn = false;
@@ -38,4 +40,14 @@ export class LoginCardComponent implements OnInit {
       verticalPosition: 'top',
     });
   }
+
+  // selectedValue(event: MatSelectChange) {
+  //     this.selectedData = {
+  //     value: event.value,
+  //     text: event.source.triggerValue
+  //   };
+  //   console.log(this.selectedData);
+  // }
+
+
 }

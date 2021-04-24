@@ -10,6 +10,13 @@ export interface PeriodicElement {
 
 const ELEMENT_DATA: PeriodicElement[] = [
   {
+    new_owner: 'aarya',
+    old_owner: 'pam',
+    commodity_id: 782822,
+    product_id: 981139,
+    timestamp: 'on Fri, 01 Jan 2021 16:43:23 IST',
+  },
+  {
     new_owner: 'jim',
     old_owner: 'pam',
     commodity_id: 782822,

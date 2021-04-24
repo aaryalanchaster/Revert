@@ -1,4 +1,24 @@
-<mat-card class="example-card">
+
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Post Id</th>
+        <th>Nmae</th>
+        <th>Email</th>
+        <th>Body</th>
+    </tr>
+    <tr *ngFor = "let c of lstProduct">
+        <td>{{c.id}}</td>
+        <td>{{c.postID}}</td>
+        <td>{{c.name}}</td>
+        <td>{{c.email}}</td>
+        <td>{{c.body}}</td>
+    </tr>
+</table>
+
+<p>id: {{objPosts?.id}}</p>
+<!-- <mat-card class="example-card">
     <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
         <mat-card-title>Shiba Inu</mat-card-title>
@@ -16,4 +36,5 @@
         <button mat-button>LIKE</button>
         <button mat-button>SHARE</button>
     </mat-card-actions>
-</mat-card>
+</mat-card> -->
+
